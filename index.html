@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>
+    FatmaQunnies
+    </title>
+
+<style>
+ 
+
+    body{
+        background-color:black ;
+    }
+.button1,.bi2{
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+  
+}
+
+
+.bio12{
+    display: block;
+    
+   
+}
+.bio{
+  
+    display: grid;
+  grid-template-areas:
+    'photo1 photo1 main main main  '
+    
+    'bio bio main main main'
+     ;
+  gap: 20px;
+  padding: 15px;
+  border: 3px solid #555555;
+width:90% ;
+margin: auto;
+  background-color: white;
+  position: sticky;
+  z-index: 110;
+
+}
+.bio2{
+    width: 100vw;
+
+ font-weight: bold;
+}
+
+
+.grid{
+    display: grid;
+  grid-template-areas:
+    'auto auto '
+    'auto auto'
+    'auto auto ' ;
+  gap: 60px;
+  padding: 100px;
+  border: 2px solid black;
+
+  background-color:black;
+  position: sticky;
+  z-index: 110;
+
+}
+
+.b1,.b11{
+    background-color: #ffffff;
+left: 2em;
+width: auto;
+padding-right: 5%;
+
+}
+.blue{
+    background-color:  #5c3e39;
+    position:relative;
+     width: 60%;
+   left: -2em;
+   text-align: center;
+   -webkit-text-fill-color:white ;
+   font-family: Ink Free;
+   
+}
+.unv{
+    display: flex;
+}
+.ppp{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  border: 5px ;
+ margin: 2em;
+ 
+}
+.main{
+    position: relative;
+    
+    right :auto;
+}
+.con{display:flex;}
+i6{
+    display: flex;
+
+    margin: 1em 1em auto 0%
+}
+grid-container6{display: flex;
+
+ 
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  right: 1%;
+  z-index: -1;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  
+  font-size: 30px;
+}
+b1,bio,bi2,b11{
+    transition: box-shadow 0.3s
+}
+.b1:hover ,.bio:hover ,.bi2:hover,.b11:hover{
+  box-shadow: 0 0 15px 10px #ffffff; 
+}
+.bi2{display:flex;height: 100px; background-color: #ffffff;}
+
+
+
+
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+  background-color:  #ffffff;
+  
+  text-align: center;
+ 
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+ 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+.bio3{
+  
+  justify-content: center; 
+  align-items: center; 
+  border: 10px ;
+ margin: 3em;
+ position: sticky;
+  z-index: 1100;
+  
+}
+.dropdown{
+  margin: 20px; 
+ padding-left: 15%;
+  text-align: center;
+  margin-right: auto;
+  }
+
+
+
+
+
+
+
+  .bar{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+
+nav{
+    width: 80%;
+    min-width: 600px;
+    height:10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(135deg, transparent 0%, transparent 50%, #909090 100%);
+  z-index: 100;
+  left: -10px;; 
+  width:100%;
+
+ 
+
+
+}
+nav a {
+    position: relative;
+     font-family: Ink Free;
+    text-decoration: none;
+    font-size: 30px;
+    
+    text-transform: capitalize;
+    color: white;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition:0.3s;
+    -o-transition: 0.3s;
+    padding: 0 30px;}
+
+nav a::before{
+    content:' ' ;
+    position: absolute;
+    left: 0;
+    height:2px;
+    background-color:blue ;
+    width:0;
+    bottom: -7px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition:0.3s;
+    -o-transition: 0.3s;
+    
+}
+nav a:hover{
+    color:rgb(23, 7, 255);
+
+}
+nav a:hover::before{
+    width: 100%;
+
+}
+.brbutton{
+  background-color: #5c3e39;
+  color: white; 
+  border: none; 
+  padding: 10px 20px;
+  margin-right:10%;
+  font-family: Ink Free;
+  position: relative;
+  z-index: 9999;
+  font-size: 1.5vw
+}
+p,ul{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.span{font-family:Times New Roman ;font-size: xx-large;}
+.brbutton  .span{font-size: xx-large;}
+.ico {gap: 30px;}
+
+@media screen and (max-width:1100px){
+
+.bio { width: 50vw; height: 80vh;   margin: 0;padding-left:50px; margin:  1vw 4vw 50vw 2vw; }
+.photo1 { width: 100vw;height: 100vh ;  }
+.con {display: flex;}
+.intro{ display: flex;width: 5000vw;}
+nav.bar {width: 100vw;margin:0px;padding-left: 0; }
+.bio .photo1{width: 23vw;height: 18vw;}
+.bio{height: 40vw;width: 80vw ; margin: 3vw;  }
+.bio h1{font-size:2.5vw;}
+.bio p{font-size:1.3vw;}
+
+.dropdown{width: 100vw; margin-left: 1%;padding-right: 0vw;padding-left: 0vw;}
+div .bi2{width: 85vw;padding: 0px 0px 0px 0px;height: 20vw;}
+.bi2{width: 88vw;margin-left: 1vw; height: 15vh;z-index: -100;padding-left:0vw;padding-right: 10vw;} 
+.bio3{padding-left:1px;width: 88vw;margin: 3vw;}
+.brbutton{margin-left: -5vw;width: 20vw;font-size:1vw;padding-right: 50px;z-index:5;}
+.dropdown .brbutton{height: 13vw;margin:  1vw 3vw 2vw 1vw; font-size: 2.5vw; width:20vw;}
+
+.bio2{width: 78vw;;padding-right: 25vw;}
+.i1,.c1,.c2,.i6{width:15vw;}
+.b1,.b11{width:40vw;font-size: smaller;}
+h2{text-align: center;font-size: 8vw;}
+.grid{padding: 5vw;}
+}
+
+@media screen and (max-width:600px){
+ 
+  nav a { font-size: 3vw; margin:-5px;text-align: center;}
+  .bio h1{font-size:2.5vw;}
+.bio p{font-size:x-small;}
+.bio { width: 75vw; height: 60vh;   margin: 0;padding-left:50px; margin:  1vw 4vw 50vw 2vw; }
+
+.bi2{width: 88vw;margin-left: 1vw; height: 15vh;z-index: -100;padding-left:0vw;padding-right: 10px;} 
+.bio3{padding-left:1px;width: 88vw ;margin: -3vw;}
+.brbutton{margin-left: -5vw;width: 20vw;font-size:1vw;padding-right: 50px;}
+.grid{display: block;padding: 5vw;width: 80vw;}
+.b11 .i1{width:30vw;margin-right: 4vw;}
+.b1 .c1,.b1 .c2{width:30vw;margin-right: 4vw;}
+.b1 .i6{width:60vw;margin-right: 4vw;}
+.grid .b1,.grid .b11{width:80vw;padding-right: 0;padding-left: 0;stroke-width:80vw;}
+
+.bio2{width: 78vw;margin-right: 0%;}
+.brbutton  .span{font-size: 150vw;}
+ .photo .button1{width: 25vw; }
+ .photo .span{font-size: 5vw;}
+ .main .material-icons {font-size: 2.5vw;}
+ .main .button1{width: 6vw; padding: 0;}
+ .dropdown .brbutton{height: 13vw;margin:  1vw 3vw 2vw 1vw; font-size: 2.5vw; width:20vw;z-index:1100;}
+ .con {display: block;}
+ .ico {gap: 15px;}
+}
+
+
+
+</style>
+</head>
+<body> 
+<div class="bio12">
+
+
+  <nav class="bar">
+   
+
+    <div class="intro"> <a href="">Home</a>
+    <a href="">Advise me</a>
+    <a href="#main">about me</a>
+    <a href="#bio">contact with me</a>
+
+    </div></nav>
+<div>        <img class="photo1" src="intro1.jpg"  alt="Photograph" width="1270"  height="600" ><br>
+</div>
+    
+
+    <div class="bio" id="bio">
+    <div class="photo" style="display:grid;">
+      <div><br> <p></p></div>
+        <img class="photo1" src="p1.jpeg"  alt="Photograph" width="300"  height="200" ><br>
+        <button class="button1" id="Welcome"> <span class="span" ><i>Welcome</i></span></button>
+    </div>
+    
+<div class="main">
+    <div class="titi" >
+         <h1> BIOGRAPHY for <i style="color:rgb(23, 7, 255);"> Fatma Qunnnies</i></h1>
+        
+         <p style="font-family:cursive ; color:#555555;">software engineer</p>
+        
+         <p style="font-family:cursive;">Hello! I'm Fatma Qunnies, software engineer with over 3 years of experience. Experienced with all stages of the development cycle for dynamic web projects. Having an in-depth knowge including advanced HTMLS, CSS3, JavaScript, jQuery, Angular JS. Strong background in management and leadership.</p>
+      
+    </div>
+    
+<div class="con" style=" gap: 30px;">
+    <div>
+    <p>Age : <i style="color:#555555;">20</i></p>
+    <p>Phone : <i><a style="color:#555555;" href="">0593907015</a></i></p>
+    <p>Email : <i><a style="color:#555555;" href="https://mail.google.com/">fatima.n.qunnies@gmail.com  </a> <br></i></p></div>
+   <div> <p>Facebook : <i><a style="color:#555555;" href="https://www.facebook.com">fatma.n.qunnies</a></i></p>
+    <p>E-class : <i><a style="color:#555555;" href="https://eclass.bethlehem.edu/login/index.php">202109442@bethlehem.edu</a></i></p> 
+       <p>Address : <i style="color:#555555;">12,School Street,Bethlehem,Palestine          .</i></p></div>
+
+</div>    
+
+<div class="ico" style="display: flex;">
+<button class="button1"><span class="material-icons" >phone </span></button>
+<button class="button1"><span class="material-icons"> email  </span></button>
+<button class="button1"><span class="material-icons">forum  </span></button>
+<button class="button1"><span class="material-icons">home </span></button> 
+<button class="button1"><span class="material-icons"> contacts </span></button> </div>
+</div>
+</div>
+
+
+
+
+
+<div class="bio3" >
+  <h2 style="text-align: center; color:white; font-size:50px; font-style: oblique;" >skills<br><br></h2>
+
+   
+    <div class="bi2" >
+        <div class="dropdown">
+   <button class="brbutton" > <span >Professional skills</span></button>
+   <div class="dropdown-content" style=" border: 2px solid   #3e2723">
+    <img src="skills1.png" alt="Cinque Terre" width="300" height="200">
+    
+    </div></div>
+   <div class="dropdown">
+   <button class="brbutton"> <span >Additional skills</span></button>
+   <div class="dropdown-content" style=" border: 2px solid   #3e2723">
+    <img src="skills3.png" alt="Cinque Terre" width="300" height="200">
+    
+    </div></div>
+   <div class="dropdown">
+   <button class="brbutton" > <span >The first version.</span></button><div class="dropdown-content" style=" border: 2px solid   #3e2723">
+    <p><a href="index3.html">Visit first version of the assignment</a><br></p>
+    <div class="desc">The previous version of the assignment was built with multiple pages, which is why the assignment was restructured in this format.</div>
+    </div></div>
+   
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="bio2">
+
+    
+        <div class="main" id="main">
+            <div class="tit">
+              <p> <br></p> <h2 style="color:white; font-size:40px; text-align: center; font-style:oblique ;">Information about Fatma</h2><div></div>
+                  <div class="grid">
+                <div class="b11"><div class="blue"> <h1>University</h1></div><div class="unv"> <div class="b111"><p style="padding-left: 1em; padding:20px;">I studied at Bethlehem University in Palestine<br> College of Engineering and Information Technology.</p></div>
+               <div> <img class="i1" src="bu2.jpg"  alt="Photograph" width="150"  height="150">    </div> </div> </div>
+               
+               
+        
+        
+        
+        
+        
+               
+               
+               <div class="b1" ><div class="blue"> <h1>Academic Life</h1></div><div class="grid-container2">
+                
+                <ul>
+                  <li style=" color:rgb(0, 0, 0)">Academic Excellence: Achieving a high GPA.
+                  </li>
+                  <li style=" color:rgb(0, 0, 0)">Research and Publications: Publishing research papers.    </li>
+                  <li style=" color:rgb(0, 0, 0)">Leadership Roles: Holding leadership positions in student organizations or clubs on campus.
+                  </li>
+                  <li style=" color:rgb(0, 0, 0)">Internships : Completing internships .
+                  </li>
+                  <li style=" color:rgb(0, 0, 0)">Community Involvement: Volunteering or participating in community service projects.
+                  </li>
+                  <li style=" color:rgb(0, 0, 0)">Projects and Portfolios: Showcasing projects, portfolios, or creative works.
+                  </li>
+                  <li style=" color:rgb(0, 0, 0)">Professional Development: Attending workshops, seminars, or industry-related events.
+                  </li>
+                 </ul></div>
+             </div>
+        
+        
+        
+        
+        
+        
+        
+        
+                <div class="b1"><div class="blue"> <h1>Achievment</h1></div>
+                <div class="grid-container2">
+                 <div class="Achievment">
+                   <ul>
+                 <li style=" color:rgb(0, 0, 0)">Strong programming skills in languages like Java, Python, and C++.
+                 </li>
+                 <li style=" color:rgb(0, 0, 0)">Extensive experience in developing web applications using technologies such as HTML, CSS, and JavaScript.    </li>
+                 <li style=" color:rgb(0, 0, 0)">Deep knowledge of designing and implementing databases using SQL and NoSQL databases.
+                 </li>
+                 <li style=" color:rgb(0, 0, 0)">Exceptional problem-solving skills, requirements analysis, and software design expertise.
+                 </li>
+                 <li style=" color:rgb(0, 0, 0)">Effective teamwork and communication skills for collaborating within project teams.
+                 </li>
+                 <li style=" color:rgb(0, 0, 0)">Efficient time management to meet deadlines and successfully achieve goals.
+                 </li>
+                 <li style=" color:rgb(0, 0, 0)">Passion for staying updated with the latest technological advancements and applying them in projects.
+                 </li>
+                </ul>
+              </div>
+                <div style="text-indent:20%;"> <img class="i1" src="acc.webp"  alt="Photograph" width="300"  height="154" >    </div>      </div>   </div> 
+        
+        
+        
+        
+        
+        
+                <div class="b1"><div class="blue"> <h1>Favorite</h1></div><div class="grid-container4">
+            <div><p style="padding-left: 1em; padding:20px;">I have several hobbies, such as baking desserts like cookies and cold treats. I also enjoy playing electronic games like GTA 2. Additionally, I have a passion for exploring the inner of devices and performing maintenance on them . I enjoy watching anime like Naruto."</p></div>
+        
+         <div  style="display: flex;padding:20px;">
+          <div style="justify-content:space-between;margin-right:10px;margin-left: 40px;">
+            <img src="fa1.jpg" alt="Marble bust of Aeschylus" height="150"  width="100" class="f1">
+            <div><br></div>
+         <img src="f4.jpg" alt="Marble bust of Alcibiades" height="150"  width="100" class="f5"></div>
+         <div style="justify-content:space-between;margin-right:10px;margin-left: 20px;">
+            <img src="f3.jpg" alt="Marble bust of Plato" height="150"  width="100" class="f0"><div><br></div>
+            <img src="f5.png" alt="Marble bust of Aeschylus"  height="150"  width="100" class="f4">
+        
+           </div>
+        </div>
+        
+        </div></div>
+        
+        
+        
+        
+                <div class="b1"><div class="blue"> <h1>city</h1></div>
+           <div class="grid-container5">
+            <div> </div><p style="padding:30px;">I live in <i style="padding:30px;">Bethlehem </i>on School Street.</p></div>
+            <div class="ppp">
+            <div> <img class="c2" src="c2.jpeg"  alt="Photograph2" width="250"  height="200"> </div>
+            <div> <img class="c1" src="c1.jpg"  alt="Photograph" width="250"  height="200">    </div> </div>
+         </div>
+        
+        
+        
+        
+        
+                <div class="b1"><div class="blue"> <h1>Sports</h1></div>
+           <div class="grid-container6">
+            <div class="sport">
+        
+            <p style="display: flex;padding:20px;" >I have several favorite sports:    </p>
+            <ul>
+            <li style=" color:rgb(0, 0, 0)">I enjoy playing football.</li>
+            <li style=" color:rgb(0, 0, 0)">Volleyball and handball are also sports I like.</li>
+            <li style=" color:rgb(0, 0, 0)">Badminton is another sport I have an interest in.</li>
+            <li style=" color:rgb(0, 0, 0)">I actively engage in running and walking.</li>
+            <li style=" color:rgb(0, 0, 0)">I have a fondness for hiking in natural trails, such as Makhrour paths.</li>
+           </ul>
+         </div>
+            <div> <img class="i6" src="s1.jpg"  alt="Photograph" width="300"  height="154"  style="display: flex;padding:30px;" >    </div> </div></div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            
+                <div class="b1"><div class="blue"> <h1>RoleModel</h1></div>
+           <div class="grid-container" style="display: flex;padding:20px;" >
+            <div><p>My role model is the Prophet Muhammad (peace be upon him), and after him, Muhammad Al-Daif.</p></div>
+            
+        </div></div>
+        
+        
+        
+        
+        
+        
+                <div class="b1"><div class="blue"> <h1>WebDiary</h1></div>
+           <div class="grid-container">
+            <div class="sport">
+          
+            <p style="text-indent: 5%" >To view the results of previous lab tests.</p>
+            <ul>
+            <li ><p><a href="lab1.html">Visit Lab1</a>     (A Simple Page About Smoking)<br></p></li>
+            <li > <p><a href="lab2.html">Visit Lab2</a>     (A Page Using CSS Formats)<br></p></li>
+            <li > <p><a href="index2.html">Visit Lab3</a>     (A sample page for Using forms)<br> </p></li>
+            <li > <p><a href="index5.html">Visit Lab4</a>     (A sample page for the assignment)<br>  <br></p></li>
+
+           </ul>
+         
+        
+        </div></div></div>    </div>
+       
+
+
+
+
+      </div> </div>
+    </div></div>
+                
+
+</body>
+</html>
